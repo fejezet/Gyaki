@@ -64,14 +64,33 @@ namespace Gyaki
             Console.WriteLine("A világos képpontok száma: {0}", VilagosKeppontokSzama);
             #endregion
             #region 4. feladat
-            int MinimumRGBErtek = 0;
-            for(int i = 0;i < magassag;i++)
+
+            int minÖsszeg = int.MaxValue;
+
+            for (int i = 0; i < magassag; i++)
             {
-                for(int j = 0;j < szelesseg; j++)
+                for (int j = 0; j < szelesseg; j++)
                 {
-                    if
+                    RGBOsszeg = 0;
+                    RGBOsszeg += matrix[i, j, 0] + matrix[i, j, 1] + matrix[i, j, 2];
+                    if (minÖsszeg > RGBOsszeg)
+                        minÖsszeg = RGBOsszeg;
                 }
             }
+            Console.WriteLine("4.Feladat:");
+            Console.WriteLine("A legsötétebb pont RGB összege: {0}", minÖsszeg);
+            Console.WriteLine("A legsötétebb pixelek színe:");
+
+            for (int i = 0; i < magassag; i++)
+            {
+                for (int j = 0; j < szelesseg; j++)
+                {
+                    if (minÖsszeg == matrix[i, j, 0] + matrix[i, j, 1] + matrix[i, j, 2])
+                        Console.WriteLine("RGB({0},{1},{2})", matrix[i, j, 0], matrix[i, j, 1], matrix[i, j, 2]);
+                }
+            }
+
+
             #endregion
             //Asztalos egy evangélikus faszlélek
 

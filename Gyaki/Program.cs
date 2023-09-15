@@ -59,6 +59,8 @@ namespace Gyaki
                         VilagosKeppontokSzama++;
                 }
             }
+            Console.WriteLine("3. feladat:");
+            Console.WriteLine("A világos képpontok száma: {0}", VilagosKeppontokSzama);
             #endregion
             //Asztalos egy evangélikus faszlélek
 

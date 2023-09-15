@@ -52,12 +52,12 @@ namespace Gyaki
             int RGBOsszeg = 0;
             for (int i = 0; i < magassag; i++)
             {
-                for (int j = 0;j < szelesseg; j++)
+                for (int j = 0; j < szelesseg; j++)
                 {
                     RGBOsszeg += matrix[i, j, 0] + matrix[i, j, 1] + matrix[i, j, 2];
                     if (RGBOsszeg > 600)
                         VilagosKeppontokSzama++;
-                }//
+                }
             }
             #endregion
 

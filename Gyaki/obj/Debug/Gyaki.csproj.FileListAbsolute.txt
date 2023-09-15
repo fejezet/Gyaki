@@ -5,3 +5,11 @@ C:\Users\xwhee\Source\Repos\Gyaki\Megosztott\Gyaki\obj\Debug\Gyaki.csproj.Assemb
 C:\Users\xwhee\Source\Repos\Gyaki\Megosztott\Gyaki\obj\Debug\Gyaki.csproj.CoreCompileInputs.cache
 C:\Users\xwhee\Source\Repos\Gyaki\Megosztott\Gyaki\obj\Debug\Gyaki.exe
 C:\Users\xwhee\Source\Repos\Gyaki\Megosztott\Gyaki\obj\Debug\Gyaki.pdb
+C:\Users\Bajár Milán\source\repos\Bence\Gyaki\bin\Debug\Gyaki.exe.config
+C:\Users\Bajár Milán\source\repos\Bence\Gyaki\bin\Debug\Gyaki.exe
+C:\Users\Bajár Milán\source\repos\Bence\Gyaki\bin\Debug\Gyaki.pdb
+C:\Users\Bajár Milán\source\repos\Bence\Gyaki\obj\Debug\Gyaki.csproj.AssemblyReference.cache
+C:\Users\Bajár Milán\source\repos\Bence\Gyaki\obj\Debug\Gyaki.csproj.SuggestedBindingRedirects.cache
+C:\Users\Bajár Milán\source\repos\Bence\Gyaki\obj\Debug\Gyaki.csproj.CoreCompileInputs.cache
+C:\Users\Bajár Milán\source\repos\Bence\Gyaki\obj\Debug\Gyaki.exe
+C:\Users\Bajár Milán\source\repos\Bence\Gyaki\obj\Debug\Gyaki.pdb

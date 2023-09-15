@@ -38,6 +38,21 @@ namespace Gyaki
 
 
             #endregion
+            #region 2. feladat
+
+            Console.Write("Sor:");
+            int sorIndex = int.Parse(Console.ReadLine());
+            Console.Write("Oszlop:");
+            int oszlopIndex = int.Parse(Console.ReadLine());
+            Console.WriteLine("A képpont színe RGB({0},{1},{2})", matrix[oszlopIndex,sorIndex, 0], matrix[oszlopIndex, sorIndex, 1], matrix[oszlopIndex, sorIndex, 2]);
+
+
+            
+
+
+            #endregion
+
+
             Console.ReadLine();
         }
     }

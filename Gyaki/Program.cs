@@ -46,10 +46,19 @@ namespace Gyaki
             int oszlopIndex = int.Parse(Console.ReadLine());
             Console.WriteLine("A képpont színe RGB({0},{1},{2})", matrix[oszlopIndex,sorIndex, 0], matrix[oszlopIndex, sorIndex, 1], matrix[oszlopIndex, sorIndex, 2]);
 
-
-            
-
-
+            #endregion
+            #region 3. feladat
+            int VilagosKeppontokSzama = 0;
+            int RGBOsszeg = 0;
+            for (int i = 0; i < magassag; i++)
+            {
+                for (int j = 0;j < szelesseg; j++)
+                {
+                    RGBOsszeg += matrix[i, j, 0] + matrix[i, j, 1] + matrix[i, j, 2];
+                    if (RGBOsszeg > 600)
+                        VilagosKeppontokSzama++;
+                }
+            }
             #endregion
 
 

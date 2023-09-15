@@ -75,7 +75,7 @@ namespace Gyaki
                     RGBOsszeg += matrix[i, j, 0] + matrix[i, j, 1] + matrix[i, j, 2];
                     if (minÖsszeg > RGBOsszeg)
                         minÖsszeg = RGBOsszeg;
-                }
+                }//////
             }
             Console.WriteLine("4.Feladat:");
             Console.WriteLine("A legsötétebb pont RGB összege: {0}", minÖsszeg);

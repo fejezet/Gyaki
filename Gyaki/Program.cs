@@ -58,6 +58,7 @@ namespace Gyaki
                     RGBOsszeg += matrix[i, j, 0] + matrix[i, j, 1] + matrix[i, j, 2];
                     if (RGBOsszeg > 600)
                         VilagosKeppontokSzama++;
+                    RGBOsszeg = 0;
                 }
             }
             Console.WriteLine("3. feladat:");

@@ -65,7 +65,7 @@ namespace Gyaki
             Console.WriteLine("A világos képpontok száma: {0}", VilagosKeppontokSzama);
             #endregion
 
-            #region 4. feladat
+            #region 4. feladat bazd
 
             int minÖsszeg = int.MaxValue;
 

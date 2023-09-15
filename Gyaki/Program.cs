@@ -19,7 +19,7 @@ namespace Gyaki
             StreamReader sr = new StreamReader("kep.txt");
             int szelesseg = 640;
             int magassag = 360;
-            int[,,] matrix = new int[magassag, szelesseg, 3]; //Asztalos Ricsinek 5cm
+            int[,,] matrix = new int[magassag, szelesseg, 3]; 
 
             for(int i = 0; i < magassag; i++)
             {

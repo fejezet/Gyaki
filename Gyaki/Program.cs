@@ -60,7 +60,7 @@ namespace Gyaki
                 }//
             }
             #endregion
-
+            //Asztalos egy evangélikus faszlélek
 
             Console.ReadLine();
         }

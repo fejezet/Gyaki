@@ -19,20 +19,20 @@ namespace Gyaki
             StreamReader sr = new StreamReader("kep.txt");
             int szelesseg = 640;
             int magassag = 360;
-            int[,,] matrix = new int[szelesseg, magassag, 3];
+            int[,,] matrix = new int[magassag, szelesseg, 3];
 
-            for(int i = 0; i < szelesseg; i++)
+            for(int i = 0; i < magassag; i++)
             {
                 string egySor = sr.ReadLine();
                 //Átmenetileg tárolja az RGB infókat ez a tömb
                 string[] tomb=egySor.Split(' ');
-                int magassagIndex = 0;  
+                int szelessegIndex = 0;  
                 for(int j = 0; j < tomb.Length; j+=3)
                 {
-                    matrix[i, magassagIndex, 0] = int.Parse(tomb[j]);
-                    matrix[i, magassagIndex, 1] = int.Parse(tomb[j+1]);
-                    matrix[i, magassagIndex, 2] = int.Parse(tomb[j+2]);
-                    magassagIndex++;
+                    matrix[i, szelessegIndex, 0] = int.Parse(tomb[j]);
+                    matrix[i, szelessegIndex, 1] = int.Parse(tomb[j+1]);
+                    matrix[i, szelessegIndex, 2] = int.Parse(tomb[j+2]);
+                    szelessegIndex++;
                 }
             }
 

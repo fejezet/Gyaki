@@ -44,7 +44,7 @@ namespace Gyaki
             int sorIndex = int.Parse(Console.ReadLine());
             Console.Write("Oszlop:");
             int oszlopIndex = int.Parse(Console.ReadLine());
-            Console.WriteLine("A képpont színe RGB({0},{1},{2})", matrix[oszlopIndex,sorIndex, 0], matrix[oszlopIndex, sorIndex,1], matrix[oszlopIndex, sorIndex, 2]);
+            Console.WriteLine("A képpont színe RGB({0},{1},{2})", matrix[oszlopIndex,sorIndex, 0], matrix[oszlopIndex, sorIndex, 1], matrix[oszlopIndex, sorIndex, 2]);
 
             #endregion
             #region 3. feladat
@@ -54,7 +54,6 @@ namespace Gyaki
             {
                 for (int j = 0; j < szelesseg; j++)
                 {
-                    RGBOsszeg = 0;
                     RGBOsszeg += matrix[i, j, 0] + matrix[i, j, 1] + matrix[i, j, 2];
                     if (RGBOsszeg > 600)
                         VilagosKeppontokSzama++;
@@ -64,37 +63,19 @@ namespace Gyaki
             Console.WriteLine("3. feladat:");
             Console.WriteLine("A világos képpontok száma: {0}", VilagosKeppontokSzama);
             #endregion
-
-            #region 4. feladat bazd
-
-            int minÖsszeg = int.MaxValue;
-
-            for (int i = 0; i < magassag; i++)
+            #region 4. feladat
+            int MinimumRGBErtek = 0;
+            for(int i = 0;i < magassag;i++)
             {
-                for (int j = 0; j < szelesseg; j++)
+                for(int j = 0;j < szelesseg; j++)
                 {
-                    RGBOsszeg = 0;
-                    RGBOsszeg += matrix[i, j, 0] + matrix[i, j, 1] + matrix[i, j, 2];
-                    if(minÖsszeg>RGBOsszeg)
-                        minÖsszeg=RGBOsszeg;
+                    if
                 }
             }
-            Console.WriteLine("4.Feladat:");
-            Console.WriteLine("A legsötétebb pont RGB összege: {0}",minÖsszeg);
-            Console.WriteLine("A legsötétebb pixelek színe:");
-
-            for (int i = 0; i < magassag; i++)
-            {
-                for (int j = 0; j < szelesseg; j++)
-                {
-                    if (minÖsszeg == matrix[i, j, 0] + matrix[i, j, 1] + matrix[i, j, 2])
-                        Console.WriteLine("RGB({0},{1},{2})", matrix[i, j, 0], matrix[i, j, 1], matrix[i,j,2]);
-                }
-            }
+            #endregion
+            //Asztalos egy evangélikus faszlélek
 
             Console.ReadLine();
-
-            #endregion
         }
     }
 }

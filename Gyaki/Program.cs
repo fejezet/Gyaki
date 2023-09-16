@@ -9,8 +9,10 @@ namespace Gyaki
 {
     internal class Program
     {
-        static void Main(string[] args)
+        
+        public void Main(string[] args)
         {
+            
             //Új Gyaki mappa 2023 emelt infó progizás feladatsorból
 
             #region 1. Feladat Bence
@@ -88,13 +90,55 @@ namespace Gyaki
                     if (minÖsszeg == matrix[i, j, 0] + matrix[i, j, 1] + matrix[i, j, 2])
                         Console.WriteLine("RGB({0},{1},{2})", matrix[i, j, 0], matrix[i, j, 1], matrix[i, j, 2]);
                 }
-            }//bazdmeg//
+            }
 
 
+            #endregion
+
+            #region 5. Feladat
+
+            int sorSzam, elteresErteke;
+            Console.WriteLine("Adja meg az adott sor számát: ");
+            sorSzam = int.Parse(Console.ReadLine());
+            Console.WriteLine("Adja meg az eltérés értékének mennyiségét (1-255): ");
+            elteresErteke = int.Parse(Console.ReadLine());
+            if (elteresErteke < 1 && elteresErteke > 255)
+            {
+                Console.WriteLine("A megadott érték a megszabott intervallumon kívül esik, adjon meg egy új értéket!");
+                Console.WriteLine("Adja meg az eltérés értékének mennyiségét (1-255): ");
+                elteresErteke = int.Parse(Console.ReadLine());
+            }
+            bool Igaz;
+            Igaz = hatar(sorSzam, elteresErteke, matrix);
+            if (Igaz)
+            {
+                Console.WriteLine("Volt ekkora eltérés, sőt talán nagyobb is!");
+
+            }
+            else
+            {
+                Console.WriteLine("Nem volt ekkora eltérés az adott sorban!");
+            }
             #endregion
             //Asztalos egy evangélikus faszlélek
 
             Console.ReadLine();
+        }
+        public bool hatar(int hatarsorSzam, int hatarelteresErteke, int[,,] functionmatrix)
+        {
+            bool eredmeny=false;
+            int elsoKek;
+            int masodikKek;
+            for (int i = 0; i < 640; i++)
+            {
+                elsoKek = functionmatrix[hatarsorSzam, i, 2];
+                masodikKek = functionmatrix[hatarsorSzam, i+1, 2];
+                if (Math.Abs(elsoKek - masodikKek) > hatarelteresErteke) 
+                {
+                    eredmeny = true;
+                }
+            }
+            return eredmeny;
         }
     }
 }

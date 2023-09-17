@@ -1,0 +1,7 @@
+C:\Users\xwhee\source\repos\Gyaki\Megosztott\Gyaki2\bin\Debug\Gyaki2.exe.config
+C:\Users\xwhee\source\repos\Gyaki\Megosztott\Gyaki2\bin\Debug\Gyaki2.exe
+C:\Users\xwhee\source\repos\Gyaki\Megosztott\Gyaki2\bin\Debug\Gyaki2.pdb
+C:\Users\xwhee\source\repos\Gyaki\Megosztott\Gyaki2\obj\Debug\Gyaki2.csproj.AssemblyReference.cache
+C:\Users\xwhee\source\repos\Gyaki\Megosztott\Gyaki2\obj\Debug\Gyaki2.csproj.CoreCompileInputs.cache
+C:\Users\xwhee\source\repos\Gyaki\Megosztott\Gyaki2\obj\Debug\Gyaki2.exe
+C:\Users\xwhee\source\repos\Gyaki\Megosztott\Gyaki2\obj\Debug\Gyaki2.pdb

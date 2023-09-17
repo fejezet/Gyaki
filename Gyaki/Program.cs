@@ -132,9 +132,6 @@ namespace Gyaki
             */
 
             #endregion
-            #endregion
-            //Asztalos egy evangélikus faszlélek
-
             Console.ReadLine();
         }
 

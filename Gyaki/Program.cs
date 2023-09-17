@@ -96,9 +96,6 @@ namespace Gyaki
 
 
             #endregion
-
-            #region 5. Feladat
-
             #region Ezt nem kérte a feladat
             //A feladat szerint nincs tényleges bekérés!!!
             /*  int sorSzam, elteresErteke;
@@ -131,6 +128,23 @@ namespace Gyaki
             }
             */
 
+            #endregion
+
+            #region 6.Feladat
+            int FelhoKezdete, FelhoVege, Index=0;
+            while (hatar(Index, 10) != true) 
+            {
+                Index++;
+            }
+            FelhoKezdete = Index+1;
+            Index = magassag-1;
+            while (hatar(Index, 10) != true)
+            {
+                Index--;
+            }
+            FelhoVege = Index+1;
+            Console.WriteLine("Felhő kezdete: {0}",FelhoKezdete);
+            Console.WriteLine("Felhő vége: {0}",FelhoVege);
             #endregion
             Console.ReadLine();
         }

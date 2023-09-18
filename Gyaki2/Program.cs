@@ -170,7 +170,7 @@ namespace Gyaki2
                 for (int j = 0; j < 2; j++)
                 {
                     txtMatrix[i, j] = tombi[index];
-                    index++;
+                    index++; //itt akadtam meg
                 }
             }
 

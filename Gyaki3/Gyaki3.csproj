@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{0E415220-ACE0-4C39-99F8-AAD4913413A1}</ProjectGuid>
+    <ProjectGuid>{F1AA4A3C-81AF-4C91-A784-F3A3E9F28DCF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Gyaki3</RootNamespace>
     <AssemblyName>Gyaki3</AssemblyName>

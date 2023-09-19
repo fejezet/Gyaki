@@ -140,26 +140,27 @@ namespace Gyaki2
 
             #endregion
 
-            #region 7.Feladat
+            /*#region 7.Feladat
             string txt = "tomeg.txt";
-            string txtTartalom="";
 
+            //Mátrix és Lista az adatok tárolásához
 
-            int[,] txtMatrix = new int[sorokSzama, 1];
-            //List<int> KezdoHelyekLista = new List<int>();
-           // List<int> tomeglista = new List<int>();
+            int[,] txtMatrix = new int[sorokSzama-1, 1];
            List<int> KezdoHelyekEsTomegeik = new List<int>();
+
+            //Az adott StartHely és a hozzá tart. tömeg kiírása listaelemekbe
 
             for (int i = 1; i < sorokSzama; i++)
             {
-                if (KezdoHelyekEsTomegeik.Contains(ketDMatrix[i, 1])==false)
+                if (KezdoHelyekEsTomegeik.Contains(ketDMatrix[i, 1]) == false && ketDMatrix[i,3]>0)
                 {
                     KezdoHelyekEsTomegeik.Add(ketDMatrix[i, 1]);
                     KezdoHelyekEsTomegeik.Add(ketDMatrix[i, 3]);
                 }
                 else if(KezdoHelyekEsTomegeik.Contains(ketDMatrix[i, 1]) == true)
                 {
-                    KezdoHelyekEsTomegeik.Insert(KezdoHelyekEsTomegeik.IndexOf(ketDMatrix[i, 1]) + 1, ketDMatrix[i,3]);
+                    int AtmenetiTomegtarolo = 0;
+                    //KezdoHelyekEsTomegeik.Insert(KezdoHelyekEsTomegeik.IndexOf(ketDMatrix[i, 1]) + 1, ketDMatrix[i, 3]);
                 }
             }
 
@@ -167,16 +168,33 @@ namespace Gyaki2
             int index = 0;
             for (int i = 0; i < sorokSzama-1; i++)
             {
-                for (int j = 0; j < 2; j++)
-                {
-                    txtMatrix[i, j] = tombi[index];
-                    index++; //itt akadtam meg
-                }
+                txtMatrix[i,0] = tombi[index];
+                index += 2;
+            }
+            index = 1;
+            for (int i = 0;i < sorokSzama - 1; i++)
+            {
+                txtMatrix[i, 0] = tombi[index];
+                index += 2;
             }
 
-            File.WriteAllText(txt, txtTartalom);
+            //txtmátrixból stringet csinálni
 
-            #endregion
+
+            StreamWriter író = new StreamWriter(txt);
+            string adottStart;
+            string adottTomeg;
+            string EgySorAFileban;
+            for (int i = 0; i < sorokSzama - 1; i++)
+            {
+                adottStart = String.Format("{0}",txtMatrix[i,0]);
+                adottTomeg = String.Format("{0}", txtMatrix[i, 1]);
+                EgySorAFileban = adottStart +" "+ adottTomeg;
+                író.WriteLine(EgySorAFileban);
+            }
+
+            #endregion 
+            */
 
             /*#region Mátrix teszt
             Console.WriteLine("A Mátrix: ");

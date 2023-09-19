@@ -10,7 +10,7 @@ namespace Gyaki3._1
     {
         static void Main(string[] args)
         {
-            //Gyaki 3
+            //Gyaki 3 2022 infó érettségi feladat: Jeladó
         }
     }
 }
